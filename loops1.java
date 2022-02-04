@@ -1,12 +1,23 @@
 import java.util.Scanner;
 
+import java.io.*;
+
 public class loops1 {
-    public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		for(int i = 0; i < 11; i++) {
-			System.out.println(n + "x" + i + " = " + n*i);
-		}
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        int N = Integer.parseInt(bufferedReader.readLine().trim());
+        int i;
+        int solucion;
+        for(i=1;i<=10;i)
+        {
+
+		System.out.println(i + " x "+N+" = "+(N*i));
+
+        }
+        
+        bufferedReader.close();
     }
-}//test
+}
 
