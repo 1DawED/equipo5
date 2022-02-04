@@ -1,5 +1,6 @@
-package com.javatpoint;
+
 import java.io.*;
+
 public class loops1 {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
@@ -9,9 +10,9 @@ public class loops1 {
         int solucion;
         for(i=1;i<=10;i)
         {
-        	solucion=n*x;
-        	System.out.println(n "x "+x+"= "+solucion+" ");
-  
+
+		System.out.println(i + " x "+N+" = "+(N*i));
+
         }
         
         bufferedReader.close();
